@@ -126,7 +126,7 @@ const toggleModal = () => {
       <div class="textRight">
         Built with <span class="red">&hearts;</span> by
         <a href="https://youtube.com/LearnwithSumit" target="_blank"
-          >Learn with Sumit</a
+          >SM Emon Islam</a
         >
       </div>
     </div>
