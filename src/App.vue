@@ -125,9 +125,7 @@ const toggleModal = () => {
       <div>Copyright &copy;2020.</div>
       <div class="textRight">
         Built with <span class="red">&hearts;</span> by
-        <a href="https://youtube.com/LearnwithSumit" target="_blank"
-          >SM Emon Islam</a
-        >
+        <a href="#" target="_blank">SM Emon Islam</a>
       </div>
     </div>
   </footer>
