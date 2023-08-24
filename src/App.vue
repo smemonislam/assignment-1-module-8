@@ -28,8 +28,10 @@ const total = computed(() => {
 
 const showModal = ref(false);
 
+const emit = defineEmits(["messageEmitted"]);
 const toggleModal = () => {
   showModal.value = !showModal.value;
+  emit("messageEmitted");
 };
 </script>
 
