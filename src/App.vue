@@ -28,6 +28,7 @@ const total = computed(() => {
 
 const showModal = ref(false);
 
+// defineEmits
 const emit = defineEmits(["messageEmitted"]);
 const toggleModal = () => {
   showModal.value = !showModal.value;

@@ -1,4 +1,5 @@
 <script setup>
+// defineProps
 defineProps({
   cart: Array,
 });
