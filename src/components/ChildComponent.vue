@@ -4,7 +4,7 @@ import { reactive } from "vue";
 const props = defineProps(["modelValue"]);
 
 // defineEmits
-defineEmits(["update:modelValue"]);
+defineEmits(["update:modelValue", "messageEmitted"]);
 
 const data = reactive({
   name: "",
