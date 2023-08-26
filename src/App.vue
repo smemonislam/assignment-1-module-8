@@ -22,7 +22,7 @@ const removeFromCart = (variantId) => {
   cart.value.splice(position, 1);
 };
 
-const total = computed(() => {
+const getTotal = computed(() => {
   return cart.value.reduce((total, variant) => total + variant.price, 0);
 });
 
@@ -98,7 +98,7 @@ const toggleModal = () => {
           <!-- total price start -->
           <div class="total" id="total">
             <div>Total Price</div>
-            <div>{{ total }} Tk</div>
+            <div>{{ getTotal }} Tk</div>
           </div>
           <!-- total price end -->
           <button type="button" class="order rounded" @click="toggleModal">
@@ -108,7 +108,7 @@ const toggleModal = () => {
 
         <!-- modal start -->
         <ChildComponent
-          v-model="total"
+          :total="getTotal"
           v-show="showModal"
           @message-emitted="toggleModal"
         />
